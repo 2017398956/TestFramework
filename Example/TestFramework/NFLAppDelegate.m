@@ -7,11 +7,13 @@
 //
 
 #import "NFLAppDelegate.h"
-
+#import <TestFramework/TestFramework.h>
 @implementation NFLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+{   TestHeader *testHeader = [[TestHeader alloc] init];
+    [testHeader test:@""];
+    AFNetworkReachabilityManager *manager;
     // Override point for customization after application launch.
     return YES;
 }

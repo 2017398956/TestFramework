@@ -9,4 +9,8 @@
 
 @implementation TestHeader
 
+- (void)test:(NSString *)str{
+    NSLog(@"This is a test NSString: %@", str);
+}
+
 @end

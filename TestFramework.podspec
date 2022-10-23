@@ -32,6 +32,12 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'TestFramework/Classes/**/*'
   
+  s.subspec 'AFNetworking' do |ss|
+    ss.vendored_frameworks =  "AFNetworking.framework"
+#    ss.resources = 'legolas_sdk/JDJR_Legolas.bundle'
+#    ss.frameworks = 'Security','WebKit'
+  end
+  
   # s.resource_bundles = {
   #   'TestFramework' => ['TestFramework/Assets/*.png']
   # }

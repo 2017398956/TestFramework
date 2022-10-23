@@ -6,10 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <AFNetworking/AFNetworking.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TestHeader : NSObject
+
+- (void) test:(NSString *)str;
 
 @end
 
